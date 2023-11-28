@@ -7,17 +7,6 @@ const AppLayout = ({ children }) => {
     
   return (
     <div>
-        <Menu mode='horizontal'>
-          <Menu.Item>
-            <Link href="/">Node Bird</Link>
-          </Menu.Item>
-          <Menu.Item>
-            <Link href="profile">프로필</Link>
-          </Menu.Item>
-          <Menu.Item>
-            <Link href="signup">회원가입</Link>
-          </Menu.Item>
-        </Menu>
         <Row gutter={8}>
           <Col xs={24} md={6}>
 
