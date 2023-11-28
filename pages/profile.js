@@ -2,16 +2,15 @@ import AppLayout from '@/components/AppLayout'
 import Head from 'next/head'
 import React from 'react'
 
-const Home = () => {
+const profile = () => {
   return (
     <AppLayout>
       <Head>
-        <title>Node Bird | Home</title>
+        <title>Node Bird | profile</title>
       </Head>
-      <div>Home</div>
+      profile
     </AppLayout>
   )
 }
 
-export default Home
-
+export default profile

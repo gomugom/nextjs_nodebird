@@ -2,16 +2,15 @@ import AppLayout from '@/components/AppLayout'
 import Head from 'next/head'
 import React from 'react'
 
-const Home = () => {
+const signup = () => {
   return (
     <AppLayout>
       <Head>
-        <title>Node Bird | Home</title>
+        <title>Node Bird | signup</title>
       </Head>
-      <div>Home</div>
+      signup
     </AppLayout>
   )
 }
 
-export default Home
-
+export default signup
