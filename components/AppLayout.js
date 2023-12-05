@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import PropTypes from 'prop-types';
 import { Col, Menu, Row } from 'antd';
-import LoginForm from './LoginFOrm';
+import LoginForm from './LoginForm';
 import UserProfile from './UserProfile';
 
 const AppLayout = ({ children }) => {
