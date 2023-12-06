@@ -3,8 +3,12 @@ import Link from 'next/link';
 import React, { useCallback, useState } from 'react'
 import styled from 'styled-components';
 import PropTypes from 'prop-types'
+import { useDispatch } from 'react-redux';
+import { loginAction } from '@/reducers';
 
-const LoginForm = ({setIsLoggedIn}) => {
+const LoginForm = () => {
+  
+  const dispatch = useDispatch();
 
   const [id, setId] = useState('');
   const [password, setPassword] = useState('');
@@ -20,7 +24,8 @@ const LoginForm = ({setIsLoggedIn}) => {
 
   const onSubmitForm = useCallback(() => {
     // onFinish는 preventDefault()가 이미 구현되어있음
-    setIsLoggedIn(true);
+    // setIsLoggedIn(true);
+    dispatch(loginAction({id, password}));
   }, [id, password]);
 
   return (
@@ -45,10 +50,6 @@ const LoginForm = ({setIsLoggedIn}) => {
       </FormWrapper>
     </div>
   )
-}
-
-LoginForm.propTypes = {
-  setIsLoggedIn: PropTypes.func.isRequired
 }
 
 const ButtonWrapper = styled.div`

@@ -6,6 +6,8 @@ import { Menu } from 'antd'
 import Link from 'next/link'
 import Search from 'antd/lib/transfer/search'
 import styled from 'styled-components'
+import wrapper from '@/store/configureStore'
+import wrapper2 from '@/store/configureStore2'
 
 // _app.js는 전체 공통 레이아웃이라 생각하면됨(시작지점이면서 전체 공통), AppLayout.js는 특정 컴포넌트에서 공통으로 사용할 레이아웃 정의
 const NodeBirdApp = ({Component}) => {
@@ -51,4 +53,4 @@ const SearchInput = styled(Search)`
     verticalAlign: middle
 `
 
-export default NodeBirdApp
+export default wrapper.withRedux(NodeBirdApp);
