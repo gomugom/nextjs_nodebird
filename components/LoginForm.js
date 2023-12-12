@@ -4,7 +4,7 @@ import React, { useCallback, useState } from 'react'
 import styled from 'styled-components';
 import PropTypes from 'prop-types'
 import { useDispatch } from 'react-redux';
-import { loginAction } from '@/reducers';
+import { loginAction } from '@/reducers/user';
 
 const LoginForm = () => {
   

@@ -1,4 +1,4 @@
-import { logoutAction } from '@/reducers';
+import { logoutAction } from '@/reducers/user';
 import { Avatar, Button, Card, Form, Input } from 'antd'
 import Link from 'next/link';
 import React, { useCallback, useState } from 'react'
