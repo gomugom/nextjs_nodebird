@@ -6,7 +6,7 @@ export const initialState = {
                 id: 1,
                 nickname: 'gomugom'
             },
-            content: '첫번째 게시글',
+            content: 'n번째 게시글',
             Images: [
                 {
                     src: 'https://s.pstatic.net/static/www/mobile/edit/20231201_1095/upload_1701406315239m2bwu.png',
@@ -32,7 +32,7 @@ export const initialState = {
                     content: 'hoho',
                 }
             ],
-        },
+        }
     ],
     imagePaths: [],
     postAdded: false,
@@ -50,12 +50,13 @@ const dummyPost = {
         id: 2,
         nickname: 'gomugom'
     },
-    content: '첫번째 게시글',
+    content: '두번째 게시글',
     Images: [
         {
             src: 'https://s.pstatic.net/static/www/mobile/edit/20231201_1095/upload_1701406315239m2bwu.png',
         },
         {
+
             src: 'https://s.pstatic.net/static/www/mobile/edit/20231201_1095/upload_1701406315239m2bwu.png',
         },
         {

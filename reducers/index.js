@@ -5,7 +5,7 @@ import { HYDRATE } from 'next-redux-wrapper';
 
 // (이전상태, 액션) => 다음상태
 const rootReducer = combineReducers( {
-    index: (state = {}, action) => {
+    index: (state = {}, action) => { // SSR을 위해 설정함
         
         switch(action.type) {
             case HYDRATE:

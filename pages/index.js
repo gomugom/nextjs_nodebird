@@ -22,8 +22,6 @@ const Home = () => {
        {
         mainPosts.map((post, index) => <PostCard key={post.id} post={post} />)
        }
-
-        <PostCard />
       </div>
     </AppLayout>
   )
